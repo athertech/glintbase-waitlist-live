@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glow-brand {
+    box-shadow: 0 0 20px -5px rgba(255, 69, 0, 0.4);
+  }
+
+  .glow-violet {
+    box-shadow: 0 0 20px -5px rgba(139, 92, 246, 0.3);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px -5px rgba(34, 211, 238, 0.3);
+  }
+
+  .glow-red {
+    box-shadow: 0 0 20px -5px rgba(248, 113, 113, 0.3);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
