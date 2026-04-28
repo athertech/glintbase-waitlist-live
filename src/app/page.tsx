@@ -95,13 +95,13 @@ export default function SystemOverhaulWaitlist() {
 
       <main className="relative pt-32">
         {/* HERO SECTION */}
-        <section className="px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20 items-center mb-40">
-          <div className="lg:col-span-12 xl:col-span-5 space-y-8 text-center xl:text-left z-10">
+        <section className="px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center mb-24 lg:mb-40">
+          <div className="lg:col-span-12 xl:col-span-5 space-y-6 lg:space-y-8 text-center xl:text-left z-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md border border-white/5 bg-white/[0.02] text-[10px] font-mono text-white/40 uppercase tracking-widest">
                 <Activity className="h-3 w-3 text-[#FF4500]" />
                 Infrastructure Protocol 1.0.4
             </div>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] text-white">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-[0.9] text-white">
                 Your documentation, <br />
                 <span className="text-white/20 italic">synced to</span> reality.
             </h1>
@@ -129,10 +129,10 @@ export default function SystemOverhaulWaitlist() {
         </section>
 
         {/* HOW IT WORKS LOOP */}
-        <section className="py-32 px-6 max-w-7xl mx-auto space-y-20">
+        <section className="py-20 lg:py-32 px-6 max-w-7xl mx-auto space-y-12 lg:space-y-20">
            <div className="text-center space-y-4">
               <h2 className="text-[10px] font-mono text-[#FF4500] uppercase tracking-[0.5em]">The Glint Loop</h2>
-              <p className="text-3xl font-black text-white uppercase tracking-tight">The Self-Healing Documentation Pipeline</p>
+              <p className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">The Self-Healing Documentation Pipeline</p>
            </div>
            
            <div className="relative">
@@ -148,13 +148,13 @@ export default function SystemOverhaulWaitlist() {
         </section>
 
         {/* SYSTEM OUTPUT SECTION - DEV VS AGENT */}
-        <section className="py-40 px-6 max-w-7xl mx-auto space-y-32">
-           <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
+        <section className="py-24 lg:py-40 px-6 max-w-7xl mx-auto space-y-24 lg:space-y-32">
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
               {/* For Developers */}
               <div className="space-y-12">
                  <div className="space-y-4">
                     <div className="text-[10px] font-mono text-white/20 uppercase tracking-widest">Protocol_01: Terminal Output</div>
-                    <h3 className="text-4xl font-black uppercase tracking-tighter">For Developers</h3>
+                    <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter">For Developers</h3>
                     <p className="text-sm text-white/40 leading-relaxed max-w-md">Maintain sanity with automated parity monitoring and seamless drift resolution.</p>
                  </div>
                  
@@ -181,14 +181,14 @@ export default function SystemOverhaulWaitlist() {
               </div>
            </div>
 
-           <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 pt-20">
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 pt-10 lg:pt-20">
               <div className="space-y-6 order-2 lg:order-1">
                  <AgentArtifactsPreview />
               </div>
               <div className="space-y-12 order-1 lg:order-2">
                  <div className="space-y-4">
                     <div className="text-[10px] font-mono text-white/20 uppercase tracking-widest">Protocol_03: Machine Interface</div>
-                    <h3 className="text-4xl font-black uppercase tracking-tighter">For AI Agents</h3>
+                    <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter">For AI Agents</h3>
                     <p className="text-sm text-white/40 leading-relaxed max-w-md">Equip your coding assistants and MCP clients with perfect machine-readable context.</p>
                  </div>
                  <div className="grid grid-cols-1 gap-4">
@@ -218,7 +218,7 @@ export default function SystemOverhaulWaitlist() {
         </section>
 
         {/* SIGNUP SECTION */}
-        <section id="signup" className="py-60 px-6 max-w-3xl mx-auto text-center space-y-16">
+        <section id="signup" className="py-32 lg:py-60 px-6 max-w-3xl mx-auto text-center space-y-12 lg:space-y-16">
            <AnimatePresence mode="wait">
               {step === "IDLE" ? (
                  <motion.div 
@@ -226,10 +226,10 @@ export default function SystemOverhaulWaitlist() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.95 }}
-                    className="space-y-12"
+                    className="space-y-8 lg:space-y-12"
                 >
                     <div className="space-y-4">
-                        <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter">Reserve Node</h2>
+                        <h2 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tighter">Reserve Node</h2>
                         <p className="text-[11px] font-mono text-white/20 uppercase tracking-[0.4em]">Initialize entry into the synchronization protocol.</p>
                     </div>
 
@@ -266,7 +266,7 @@ export default function SystemOverhaulWaitlist() {
                     <div className="h-20 w-20 rounded-full bg-green-500/10 border border-green-500/20 flex items-center justify-center mx-auto mb-10">
                         <Check className="h-10 w-10 text-green-500" />
                     </div>
-                    <h2 className="text-4xl font-black uppercase tracking-tighter">Queue Reserved</h2>
+                    <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tighter">Queue Reserved</h2>
                     <p className="text-xs text-white/40 uppercase tracking-[0.2em] max-w-sm mx-auto leading-relaxed">Identity synchronized. You will receive a transmission once node capacity becomes available.</p>
                     <Link href="/" className="inline-block text-[10px] font-mono text-white/20 hover:text-white uppercase tracking-[0.5em] transition-colors pt-10">Return to base</Link>
                 </motion.div>
@@ -303,7 +303,7 @@ function LoopStep({ number, label, icon, signal }: any) {
 
 function SystemCard({ title, value, desc, icon }: any) {
     return (
-        <div className="p-6 rounded-xl border border-white/5 bg-white/[0.01] flex items-center gap-6 hover:bg-white/[0.03] transition-all">
+        <div className="p-5 sm:p-6 rounded-xl border border-white/5 bg-white/[0.01] flex items-center gap-4 sm:gap-6 hover:bg-white/[0.03] transition-all">
             <div className="h-10 w-10 rounded-lg bg-white/5 flex items-center justify-center shrink-0">
                 {icon}
             </div>
@@ -336,7 +336,7 @@ function DashboardMockup({ state, freshness }: any) {
 
             <div className="flex-1 grid grid-cols-12 overflow-hidden">
                 {/* Sidebar */}
-                <div className="col-span-3 border-r border-white/5 p-6 space-y-4 bg-white/[0.01]">
+                <div className="hidden sm:block col-span-3 border-r border-white/5 p-6 space-y-4 bg-white/[0.01]">
                     <div className="h-3 w-3/4 rounded bg-white/5 animate-pulse" />
                     <div className="h-3 w-1/2 rounded bg-white/5" />
                     <div className="h-3 w-2/3 rounded bg-white/5" />
@@ -350,14 +350,14 @@ function DashboardMockup({ state, freshness }: any) {
                 </div>
 
                 {/* Main Content */}
-                <div className="col-span-9 p-8 flex flex-col gap-6">
+                <div className="col-span-12 sm:col-span-9 p-4 sm:p-8 flex flex-col gap-4 sm:gap-6">
                     <div className="grid grid-cols-2 gap-4">
-                        <div className="p-4 rounded-xl border border-white/5 bg-white/[0.02]">
-                            <div className="text-[8px] font-mono text-white/20 uppercase tracking-widest mb-2">Freshness Score</div>
-                            <div className="text-3xl font-black font-mono text-white">{freshness}%</div>
+                        <div className="p-3 sm:p-4 rounded-xl border border-white/5 bg-white/[0.02]">
+                            <div className="text-[7px] sm:text-[8px] font-mono text-white/20 uppercase tracking-widest mb-1 sm:mb-2">Freshness Score</div>
+                            <div className="text-xl sm:text-3xl font-black font-mono text-white">{freshness}%</div>
                         </div>
-                        <div className="p-4 rounded-xl border border-white/5 bg-white/[0.02]">
-                            <div className="text-[8px] font-mono text-white/20 uppercase tracking-widest mb-2">Status</div>
+                        <div className="p-3 sm:p-4 rounded-xl border border-white/5 bg-white/[0.02]">
+                            <div className="text-[7px] sm:text-[8px] font-mono text-white/20 uppercase tracking-widest mb-1 sm:mb-2">Status</div>
                             <div className="flex items-center gap-2">
                                 <div className={`h-2 w-2 rounded-full ${state === 'SYNCED' ? 'bg-green-500' : 'bg-[#FF4500] animate-pulse'}`} />
                                 <div className="text-[10px] font-black text-white uppercase">{state}</div>
@@ -365,8 +365,8 @@ function DashboardMockup({ state, freshness }: any) {
                         </div>
                     </div>
 
-                    <div className="flex-1 rounded-xl border border-white/5 bg-black/40 p-6 overflow-hidden relative">
-                         <div className="text-[8px] font-mono text-white/10 uppercase tracking-widest mb-4">Live_System_Logs</div>
+                    <div className="flex-1 rounded-xl border border-white/5 bg-black/40 p-4 sm:p-6 overflow-hidden relative">
+                         <div className="text-[7px] sm:text-[8px] font-mono text-white/10 uppercase tracking-widest mb-3 sm:mb-4">Live_System_Logs</div>
                          <div className="space-y-1.5">
                             <LogLine active={state === 'SCANNING'}>[INF] AST_SCAN_INIT: glint-core/main</LogLine>
                             <LogLine active={state === 'DETECTING'}>[WARN] DRIFT_DETECTED: auth/login.ts</LogLine>
@@ -435,7 +435,7 @@ function PRPreviewComponent() {
 
 function AgentArtifactsPreview() {
     return (
-        <div className="aspect-square rounded-3xl border border-white/10 bg-[#020617] p-8 shadow-2xl relative overflow-hidden flex flex-col gap-6">
+        <div className="w-full aspect-square md:aspect-auto md:h-full rounded-3xl border border-white/10 bg-[#020617] p-6 sm:p-8 shadow-2xl relative overflow-hidden flex flex-col gap-6">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,69,0,0.05),transparent)]" />
             <div className="text-[10px] font-mono text-white/20 uppercase tracking-widest border-b border-white/5 pb-4">Machine_Readable_Catalog</div>
             
