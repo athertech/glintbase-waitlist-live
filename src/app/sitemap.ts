@@ -2,7 +2,7 @@
 import { MetadataRoute } from 'next';
 
 // 1. Define your primary production domain
-const BASE_URL = 'https://glintbase.com'; // Replace with your exact Vercel custom domain
+const BASE_URL = 'https://glintbase.xyz'; // Replace with your exact Vercel custom domain
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 2. Define your site's static landing pages
