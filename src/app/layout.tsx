@@ -12,9 +12,13 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
+// Both metadata blocks are combined into this single object
 export const metadata: Metadata = {
   title: "Glintbase | Agentic Documentation Engine",
   description: "Eliminate documentation debt with agentic velocity.",
+  verification: {
+    google: "FuwkZGg4rWDRQLqPv7TBAdIsXx8AZt5eQ2T0PW1dO4s", 
+  },
 };
 
 export default function RootLayout({
@@ -30,33 +34,6 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-foreground tracking-tight">
         {children}
       </body>
-    </html>
-  );
-}
-
-
-// app/layout.tsx
-import type { Metadata } from "next";
-
-// 1. Define and export your static metadata configuration
-export const metadata: Metadata = {
-  title: "My Production Site",
-  description: "Built with Next.js and Vercel",
-  
-  // 2. Insert the Google Search Console metadata key here
-  verification: {
-    google: "FuwkZGg4rWDRQLqPv7TBAdIsXx8AZt5eQ2T0PW1dO4s", // <-- Paste your exact content token string here
-  },
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
     </html>
   );
 }
