@@ -12,10 +12,9 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-// Both metadata blocks are combined into this single object
 export const metadata: Metadata = {
-  title: "Glintbase | Agentic Documentation Engine",
-  description: "Eliminate documentation debt with agentic velocity.",
+  title: "Glintbase | Documentation Operating System for the AI Era",
+  description: "Generate, maintain, validate, and deploy agent-ready documentation. Turn code into trusted documentation for both humans and AI agents.",
   verification: {
     google: "FuwkZGg4rWDRQLqPv7TBAdIsXx8AZt5eQ2T0PW1dO4s", 
   },
