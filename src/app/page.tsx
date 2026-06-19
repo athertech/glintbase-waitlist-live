@@ -599,7 +599,7 @@ export default function SystemRedesignWaitlist() {
                 </AnimatePresence>
               </div>
 
-              <Link href="#" className="hover:text-white transition-colors">Study</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">Journal</Link>
             </div>
           </div>
 
@@ -1265,8 +1265,13 @@ export default function SystemRedesignWaitlist() {
       <footer className="border-t border-white/5 py-12 px-6 flex flex-col md:flex-row items-center justify-between gap-8 bg-black/40 backdrop-blur-3xl relative z-20">
         <div className="text-[9px] font-mono text-white/20 uppercase tracking-widest">© 2026 Glintbase Protocol</div>
         <div className="flex gap-10">
-          {["GitHub", "Documentation", "Twitter"].map(item => (
-            <a key={item} href="#" className="text-[9px] font-mono text-white/35 hover:text-[#FF3300] uppercase tracking-widest transition-colors">{item}</a>
+          {[
+            { label: "GitHub", href: "https://github.com/glintbase" },
+            { label: "Journal", href: "/blog" },
+            { label: "Documentation", href: "#" },
+            { label: "Twitter", href: "#" }
+          ].map(item => (
+            <a key={item.label} href={item.href} className="text-[9px] font-mono text-white/35 hover:text-[#FF3300] uppercase tracking-widest transition-colors">{item.label}</a>
           ))}
         </div>
       </footer>
