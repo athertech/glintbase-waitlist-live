@@ -35,7 +35,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)"],
+        sans: ["var(--font-sans)", "sans-serif"],
         mono: ["var(--font-jetbrains)"],
       },
       animation: {
