@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Glintbase | Documentation Operating System for the AI Era",
   description: "Generate, maintain, validate, and deploy agent-ready documentation. Turn code into trusted documentation for both humans and AI agents.",
   verification: {
-    google: "FuwkZGg4rWDRQLqPv7TBAdIsXx8AZt5eQ2T0PW1dO4s", 
+    google: "k0DX8PtCSHYedje9IPPug8EIPeS_ETRAdRjtGIYm-3g", 
   },
 };
 
